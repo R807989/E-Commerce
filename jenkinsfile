@@ -30,7 +30,7 @@ git branch: 'main', url: 'https://github.com/R807989/E-Commerce.git'
             steps {
                 script {
                     
-                    sh 'docker run -d -p 80:80 your_image_name'
+                    sh 'docker run -d -p 80:80 ravi-php
                 }
             }
         }
