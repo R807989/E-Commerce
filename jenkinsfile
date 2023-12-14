@@ -11,6 +11,19 @@ steps {
 git branch: 'main', url: 'https://github.com/R807989/E-Commerce.git'
 }
 }
+
+
+ stage('build image ') {
+            steps {
+                dir(" /var/lib/jenkins/workspace/php-2/E-commerce-7June") {
+                script {
+                    // Deploy your Laravel application (e.g., push to a production server)
+                    sh 'docker build -t ravi-php .'
+                }
+            }
+        }
+
+}
 }
 
 
