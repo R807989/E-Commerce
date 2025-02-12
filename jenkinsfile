@@ -5,7 +5,7 @@ stages{
 stage("git clone"){
 steps{
 
-
+git branch: 'main', url: 'https://github.com/R807989/E-Commerce.git'
 
 }
 }
