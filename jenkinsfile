@@ -1,17 +1,10 @@
 pipeline {
-agent any
-stages{
-
-stage("git clone"){
-steps{
-
-https://github.com/R807989/E-Commerce.git
+    agent any
+    stages {
+        stage("Git Clone") {
+            steps {
+                git 'https://github.com/R807989/E-Commerce.git'
+            }
+        }
+    }
 }
-}
-}
-
-
-}
-
-
-
